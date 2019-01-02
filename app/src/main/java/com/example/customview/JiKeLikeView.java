@@ -232,7 +232,6 @@ public class JiKeLikeView extends View {
             if (isFirst) {
                 textCancelValue = String.valueOf(likeNumber + 1);
             } else {
-                isFirst = !isFirst;
                 textCancelValue = String.valueOf(likeNumber);
             }
         }
@@ -321,9 +320,10 @@ public class JiKeLikeView extends View {
     public boolean onTouchEvent(MotionEvent event) {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
-
                     jump();
+                break;
 
+            default:
                 break;
         }
         return super.onTouchEvent(event);
@@ -382,7 +382,7 @@ public class JiKeLikeView extends View {
     /**
      * 手指缩放方法
      *
-     * @param handScale
+     * @param handScale float
      */
     public void setHandScale(float handScale) {
         //传递缩放系数
@@ -396,7 +396,7 @@ public class JiKeLikeView extends View {
     /**
      * 手指上四点从0到1出现方法
      *
-     * @param shingAlpha
+     * @param shingAlpha float
      */
 
     public void setShingAlpha(float shingAlpha) {
@@ -407,7 +407,7 @@ public class JiKeLikeView extends View {
     /**
      * 手指上四点缩放方法
      *
-     * @param shingScale
+     * @param shingScale float
      */
     @Keep
     public void setShingScale(float shingScale) {
@@ -464,7 +464,7 @@ public class JiKeLikeView extends View {
     /**
      * 画出圆形波纹
      *
-     * @param shingCircleScale
+     * @param shingCircleScale float
      */
     public void setShingCircleScale(float shingCircleScale) {
         this.shingCircleScale = shingCircleScale;
@@ -474,7 +474,7 @@ public class JiKeLikeView extends View {
     /**
      * 圆形透明度设置
      *
-     * @param shingCircleAlpha
+     * @param shingCircleAlpha float
      */
     public void setShingCircleAlpha(float shingCircleAlpha) {
         this.shingCircleAlpha = shingCircleAlpha;
