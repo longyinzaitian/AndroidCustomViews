@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.example.customview.R;
 import com.example.customview.jike.JikeLikeActivity;
+import com.example.customview.rvpg.RvAndVpActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,6 +23,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, JikeLikeActivity.class));
+            }
+        });
+
+        findViewById(R.id.btn_rv_and_vp).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, RvAndVpActivity.class));
             }
         });
     }
