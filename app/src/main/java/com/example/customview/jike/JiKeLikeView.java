@@ -1,4 +1,4 @@
-package com.example.customview;
+package com.example.customview.jike;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
@@ -10,7 +10,6 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.Path;
 import android.graphics.Rect;
 import android.support.annotation.Keep;
 import android.support.annotation.Nullable;
@@ -18,6 +17,9 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+
+import com.example.customview.R;
+import com.example.customview.SystemUtil;
 
 /**
  * Describe :

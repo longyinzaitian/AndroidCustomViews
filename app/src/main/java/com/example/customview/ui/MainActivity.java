@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.customview.R;
+import com.example.customview.jike.JikeLikeActivity;
 
 public class MainActivity extends AppCompatActivity {
 
