@@ -35,6 +35,7 @@ dependencies {
     implementation "com.android.support:appcompat-v7:${rootProject.ext.android_support_v}"
     implementation "com.android.support:support-v4:${rootProject.ext.android_support_v}"
     implementation "com.android.support:recyclerview-v7:${rootProject.ext.android_support_v}"
+    implementation "com.android.support:design:${rootProject.ext.android_support_v}"
 
     implementation "android.arch.lifecycle:common-java8:${rootProject.ext.lifecycle_v}"
     implementation "com.airbnb.android:lottie:${rootProject.ext.lottie_v}"
