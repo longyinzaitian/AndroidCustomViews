@@ -10,7 +10,12 @@ import android.view.ViewGroup;
 
 import com.example.customview.R;
 
-
+/**
+ *
+ *
+ * @author husy
+ * @date 2019年2月17日22:52:59
+ */
 public class CardDetailFragment extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";

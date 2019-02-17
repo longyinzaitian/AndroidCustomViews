@@ -4,6 +4,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <include
+        layout='@layout/include_layout_toolbar'
+        />
+
     <Button
         android:id="@+id/btn_jike_like"
         android:layout_width="wrap_content"
