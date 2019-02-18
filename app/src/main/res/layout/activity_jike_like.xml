@@ -7,9 +7,13 @@
     android:orientation="vertical"
     tools:context=".ui.MainActivity">
 
-    <include
-        layout='@layout/include_layout_toolbar'
-        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            layout='@layout/include_layout_toolbar'
+            />
+    </FrameLayout>
 
     <com.example.customview.jike.JiKeLikeView
         android:id="@+id/jikeone"
@@ -17,6 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         app:like_number="999"/>
+
     <com.example.customview.jike.JiKeLikeView
         android:id="@+id/jiketwo"
         android:layout_width="wrap_content"
@@ -24,12 +29,14 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
         app:like_number="1000"/>
+
     <com.example.customview.jike.JiKeLikeView
         android:id="@+id/jikethree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         app:like_number="104"/>
+
     <com.example.customview.jike.JiKeLikeView
         android:id="@+id/jikefour"
         android:layout_width="wrap_content"
@@ -37,6 +44,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
         app:like_number="34"/>
+
     <com.example.customview.jike.JiKeLikeView
         android:id="@+id/jikefive"
         android:layout_width="wrap_content"
