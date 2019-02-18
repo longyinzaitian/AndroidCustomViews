@@ -1,10 +1,10 @@
 package com.example.customview.ui;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.customview.BaseActivity;
 import com.example.customview.R;
 import com.example.customview.jike.JikeLikeActivity;
 import com.example.customview.rvpg.RvAndVpActivity;
@@ -15,7 +15,7 @@ import com.example.customview.rvpg.RvAndVpActivity;
  * @author husy
  * @date 2019年2月17日
  */
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

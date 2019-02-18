@@ -10,17 +10,17 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@android:color/transparent"
-        android:theme="@android:style/Widget.Holo.Light.ActionBar"
-        app:navigationIcon="@drawable/ic_launcher_foreground"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        android:theme="@android:style/Widget.Holo.Light.TextView"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar">
 
         <TextView
             android:id="@+id/toolbar_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textColor="#333333"
-            android:textSize="24dp" />
+            android:textColor="@android:color/white"
+            android:text="@string/app_name"
+            android:textSize="20dp" />
     </com.example.customview.ui.view.CommonToolbar>
 
     <View
