@@ -14,20 +14,16 @@
 
     <Button
         android:id="@+id/btn_jike_like"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/MainBtnStyle"
         android:text="即可点赞效果"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center_vertical"
+        android:background="@color/design_default_color_primary"
         />
 
     <Button
         android:id="@+id/btn_rv_and_vp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/MainBtnStyle"
         android:text="列表+ViewPager"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center_vertical"
+        android:background="@color/colorPrimary"
         />
 
 </LinearLayout>
