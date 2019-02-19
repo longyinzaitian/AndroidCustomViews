@@ -2,6 +2,7 @@ package com.example.customview.ui.view;
 
 import android.content.Context;
 import android.support.annotation.Nullable;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.Toolbar;
 import android.util.AttributeSet;
 import android.view.View;
@@ -29,7 +30,7 @@ public class CommonToolbar extends Toolbar {
     }
 
     private void init() {
-        this.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
+        this.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.colorPrimaryDark));
     }
 
     public void setNavigationInfo(View.OnClickListener onClickListener) {

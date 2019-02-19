@@ -41,6 +41,9 @@ dependencies {
     implementation "android.arch.lifecycle:common-java8:${rootProject.ext.lifecycle_v}"
     implementation "com.airbnb.android:lottie:${rootProject.ext.lottie_v}"
 
+    implementation "com.jakewharton:butterknife:${rootProject.ext.butterknife_v}"
+    annotationProcessor "com.jakewharton:butterknife-compiler:${rootProject.ext.butterknife_v}"
+
     implementation "com.github.bumptech.glide:glide:${rootProject.ext.glide_v}"
     annotationProcessor "com.github.bumptech.glide:compiler:${rootProject.ext.glide_v}"
 
