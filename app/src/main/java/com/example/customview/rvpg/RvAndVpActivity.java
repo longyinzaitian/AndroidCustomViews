@@ -21,7 +21,7 @@ public class RvAndVpActivity extends BaseActivity {
         setContentView(R.layout.activity_rv_and_vp);
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_content,
-                CardDetailFragment.create())
+                RvAndVpFragment.create())
                 .commitNowAllowingStateLoss();
 
         this.setListener();

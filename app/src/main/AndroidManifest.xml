@@ -21,6 +21,7 @@
 
         <activity android:name=".rvpg.RvAndVpActivity" />
         <activity android:name=".jike.JikeLikeActivity" />
+        <activity android:name=".rvpg.CorNormalActivity" />
     </application>
 
 </manifest>
