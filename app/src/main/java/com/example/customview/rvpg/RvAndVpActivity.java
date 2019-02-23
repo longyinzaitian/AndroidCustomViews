@@ -1,11 +1,9 @@
 package com.example.customview.rvpg;
 
 import android.os.Bundle;
-import android.view.View;
 
 import com.example.customview.BaseActivity;
 import com.example.customview.R;
-import com.example.customview.ui.view.CommonToolbar;
 
 /**
  *
@@ -23,13 +21,10 @@ public class RvAndVpActivity extends BaseActivity {
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_content,
                 RvAndVpFragment.create())
                 .commitNowAllowingStateLoss();
-
-        this.setListener();
     }
 
-    private void setListener() {
-        ((CommonToolbar)findViewById(R.id.toolbar)).setNavigationInfo((View v) ->
-                finish()
-        );
+    @Override
+    protected String getToolbarTitle() {
+        return getResources().getString(R.string.coord);
     }
 }

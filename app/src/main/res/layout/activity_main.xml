@@ -26,4 +26,11 @@
         android:background="@color/colorPrimary"
         />
 
+    <Button
+        android:id="@+id/btn_circle_image"
+        style="@style/MainBtnStyle"
+        android:text="圆形图片"
+        android:background="@color/design_default_color_primary"
+        />
+
 </LinearLayout>

@@ -6,6 +6,7 @@ import android.view.View;
 
 import com.example.customview.BaseActivity;
 import com.example.customview.R;
+import com.example.customview.image.CircleImageActivity;
 import com.example.customview.jike.JikeLikeActivity;
 import com.example.customview.rvpg.RvAndVpActivity;
 
@@ -24,6 +25,11 @@ public class MainActivity extends BaseActivity {
         setClickListener();
     }
 
+    @Override
+    protected void setToolbar() {
+
+    }
+
     private void setClickListener() {
         findViewById(R.id.btn_jike_like).setOnClickListener((View v) ->
             startActivity(new Intent(MainActivity.this, JikeLikeActivity.class))
@@ -31,6 +37,10 @@ public class MainActivity extends BaseActivity {
 
         findViewById(R.id.btn_rv_and_vp).setOnClickListener((View v) ->
                 startActivity(new Intent(MainActivity.this, RvAndVpActivity.class))
+        );
+
+        findViewById(R.id.btn_circle_image).setOnClickListener((View v) ->
+                startActivity(new Intent(MainActivity.this, CircleImageActivity.class))
         );
     }
 }

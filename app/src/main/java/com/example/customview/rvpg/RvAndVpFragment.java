@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.customview.R;
-import com.example.customview.ui.BaseFrament;
+import com.example.customview.ui.BaseFragment;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -22,7 +22,7 @@ import butterknife.ButterKnife;
  * @author husy
  * @date 2019年2月17日
  */
-public class RvAndVpFragment extends BaseFrament {
+public class RvAndVpFragment extends BaseFragment {
 
     @BindView(R.id.btn_normal)
     Button btnNormal;
@@ -57,7 +57,7 @@ public class RvAndVpFragment extends BaseFrament {
     public View onCreateView(@NonNull  LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_card_detail, container, false);
-        ButterKnife.bind(this, view);
+        this.mUnbinder = ButterKnife.bind(this, view);
         return view;
     }
 

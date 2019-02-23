@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">安卓CustomView</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="circle_image">圆形图片</string>
+    <string name="jike">即刻点赞效果</string>
+    <string name="coord">协调布局相关</string>
+
 </resources>

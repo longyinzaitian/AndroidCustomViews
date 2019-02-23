@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion rootProject.ext.compileSDKVersion
@@ -29,6 +30,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     testImplementation "junit:junit:${rootProject.ext.junit_v}"
     androidTestImplementation "com.android.support.test:runner:${rootProject.ext.test_runner_v}"
     androidTestImplementation "com.android.support.test.espresso:espresso-core:${rootProject.ext.test_espresso_v}"

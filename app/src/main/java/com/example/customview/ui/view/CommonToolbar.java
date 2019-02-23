@@ -31,13 +31,12 @@ public class CommonToolbar extends Toolbar {
 
     private void init() {
         this.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.colorPrimaryDark));
+        this.setTitleTextAppearance(getContext(), R.style.CommonBarTitleStyle);
     }
 
     public void setNavigationInfo(View.OnClickListener onClickListener) {
         this.setNavigationIcon(R.drawable.mt_topbar_back_ic);
         this.setNavigationOnClickListener(onClickListener);
-        this.setTitle(R.string.app_name);
-        this.setTitleTextAppearance(getContext(), R.style.CommonBarTitleStyle);
-        getChildAt(0).setVisibility(INVISIBLE);
+        getChildAt(0).setVisibility(GONE);
     }
 }
