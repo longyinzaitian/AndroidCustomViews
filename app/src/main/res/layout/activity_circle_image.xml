@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -18,7 +19,11 @@
         android:layout_width="@dimen/dimens_100dp"
         android:layout_height="@dimen/dimens_100dp"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/img_e_commerce_item"
+        app:src="@drawable/img_e_commerce_item"
+        app:corner="@dimen/dimens_20dp"
+        android:layout_marginTop="@dimen/dimens_30dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="center"
         />
 
 </LinearLayout>

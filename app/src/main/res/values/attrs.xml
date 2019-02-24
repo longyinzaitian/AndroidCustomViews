@@ -6,4 +6,9 @@
         <attr name="like_number" format="integer"/>
     </declare-styleable>
 
+    <declare-styleable name="CircleImageView">
+        <attr name="src" format="reference"/>
+        <attr name="corner" format="integer|dimension"/>
+    </declare-styleable>
+
 </resources>
