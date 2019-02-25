@@ -1,4 +1,4 @@
-package com.example.customview.image;
+package com.husy.roundcircleimageview;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -15,8 +15,6 @@ import android.graphics.drawable.Drawable;
 import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
 import android.util.TypedValue;
-
-import com.example.customview.R;
 
 /**
  * @author husy
@@ -42,7 +40,8 @@ public class CircleImageView extends AppCompatImageView {
         TypedValue typedValue = a.peekValue(R.styleable.CircleImageView_corner);
         float corner = 0;
         if (typedValue.type == TypedValue.TYPE_DIMENSION) {
-            corner = a.getDimension(R.styleable.CircleImageView_corner, 0);
+            corner = a.getDimensionPixelSize(R.styleable.CircleImageView_corner, (int)TypedValue.applyDimension(
+                    TypedValue.COMPLEX_UNIT_DIP, 0, getResources().getDisplayMetrics()));
         } else if (typedValue.type == TypedValue.TYPE_INT_DEC) {
             corner = a.getInt(R.styleable.CircleImageView_corner, 0);
         }
@@ -56,7 +55,7 @@ public class CircleImageView extends AppCompatImageView {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-
+        System.out.println("Circle image view. onDraw. " + getDrawable());
     }
 
     private class CircleDrawable extends Drawable {

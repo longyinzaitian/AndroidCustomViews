@@ -15,7 +15,7 @@
             />
     </FrameLayout>
 
-    <com.example.customview.image.CircleImageView
+    <com.husy.roundcircleimageview.CircleImageView
         android:layout_width="@dimen/dimens_100dp"
         android:layout_height="@dimen/dimens_100dp"
         android:contentDescription="@string/app_name"
