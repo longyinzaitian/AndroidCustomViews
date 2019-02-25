@@ -34,9 +34,11 @@ public class CircleImageView extends AppCompatImageView {
 
     public CircleImageView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+
         final TypedArray a = context.obtainStyledAttributes(
                 attrs, R.styleable.CircleImageView, defStyleAttr, defStyleAttr);
         int srcId = a.getResourceId(R.styleable.CircleImageView_src, 0);
+
         TypedValue typedValue = a.peekValue(R.styleable.CircleImageView_corner);
         float corner = 0;
         if (typedValue.type == TypedValue.TYPE_DIMENSION) {
@@ -46,16 +48,17 @@ public class CircleImageView extends AppCompatImageView {
             corner = a.getInt(R.styleable.CircleImageView_corner, 0);
         }
         a.recycle();
+
         if (srcId != 0) {
             mCircleDrawable = new CircleDrawable(BitmapFactory.decodeResource(getResources(), srcId), corner);
         }
+
         setImageDrawable(mCircleDrawable);
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        System.out.println("Circle image view. onDraw. " + getDrawable());
     }
 
     private class CircleDrawable extends Drawable {
