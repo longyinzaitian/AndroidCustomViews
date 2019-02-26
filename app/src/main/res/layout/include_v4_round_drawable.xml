@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="@dimen/dimens_15dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/android_round_image"
+                android:layout_width="@dimen/dimens_100dp"
+                android:layout_height="@dimen/dimens_100dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                tools:src="@drawable/img_e_commerce_item" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimens_15dp"
+                android:text="fitxy" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimens_25dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/android_round_image_center"
+                android:layout_width="@dimen/dimens_100dp"
+                android:layout_height="@dimen/dimens_100dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/app_name"
+                android:scaleType="center"
+                tools:src="@drawable/img_e_commerce_item" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimens_15dp"
+                android:text="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimens_25dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/android_round_image_center_crop"
+                android:layout_width="@dimen/dimens_100dp"
+                android:layout_height="@dimen/dimens_100dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/img_e_commerce_item" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimens_15dp"
+                android:text="center_crop" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/android_round_image_centerInside"
+                android:layout_width="@dimen/dimens_100dp"
+                android:layout_height="@dimen/dimens_100dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                tools:src="@drawable/img_e_commerce_item" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimens_15dp"
+                android:text="centerInside" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimens_25dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/android_round_image_fitCenter"
+                android:layout_width="@dimen/dimens_100dp"
+                android:layout_height="@dimen/dimens_100dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                tools:src="@drawable/img_e_commerce_item" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimens_15dp"
+                android:text="fitCenter" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimens_25dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/android_round_image_center_matrix"
+                android:layout_width="@dimen/dimens_100dp"
+                android:layout_height="@dimen/dimens_100dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/app_name"
+                android:scaleType="matrix"
+                tools:src="@drawable/img_e_commerce_item" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimens_15dp"
+                android:text="matrix" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/android_round_image_fitStart"
+                android:layout_width="@dimen/dimens_100dp"
+                android:layout_height="@dimen/dimens_100dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitStart"
+                tools:src="@drawable/img_e_commerce_item" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimens_15dp"
+                android:text="fitStart" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimens_25dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/android_round_image_fitEnd"
+                android:layout_width="@dimen/dimens_100dp"
+                android:layout_height="@dimen/dimens_100dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitEnd"
+                tools:src="@drawable/img_e_commerce_item" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimens_15dp"
+                android:text="fitEnd" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

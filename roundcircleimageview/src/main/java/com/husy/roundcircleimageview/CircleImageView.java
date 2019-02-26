@@ -93,7 +93,7 @@ public class CircleImageView extends AppCompatImageView {
         @Override
         public void setBounds(int left, int top, int right, int bottom) {
             super.setBounds(left, top, right, bottom);
-            mPaint.setShader(new BitmapShader(mBitmap, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP));
+            mPaint.setShader(new BitmapShader(Bitmap.createScaledBitmap(mBitmap, right - left, bottom - top, true), Shader.TileMode.CLAMP, Shader.TileMode.CLAMP));
             mRect = new RectF(left, top, right, bottom);
         }
 
