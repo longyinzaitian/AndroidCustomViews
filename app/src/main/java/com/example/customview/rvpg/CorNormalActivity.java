@@ -1,9 +1,11 @@
 package com.example.customview.rvpg;
 
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.AppBarLayout;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.DividerItemDecoration;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
@@ -22,6 +24,9 @@ public class CorNormalActivity extends BaseActivity {
     @BindView(R.id.recycler_view)
     RecyclerView mRecyclerView;
 
+    @BindView(R.id.appbar)
+    AppBarLayout mAppBarLayout;
+
     private ListAdapter mAdapter;
 
     @Override
@@ -32,14 +37,24 @@ public class CorNormalActivity extends BaseActivity {
         this.mUnbinder = ButterKnife.bind(this);
 
         setData();
+        setListener();
     }
 
     private void setData() {
-        if (mAdapter == null) {
-            mAdapter = new ListAdapter(CorNormalActivity.this);
-        }
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(CorNormalActivity.this));
-        mRecyclerView.addItemDecoration(new DividerItemDecoration(CorNormalActivity.this, DividerItemDecoration.HORIZONTAL));
+        mAdapter = new ListAdapter(CorNormalActivity.this);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(CorNormalActivity.this);
+        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        mRecyclerView.setLayoutManager(linearLayoutManager);
         mRecyclerView.setAdapter(mAdapter);
+
+        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(CorNormalActivity.this, DividerItemDecoration.VERTICAL);
+        dividerItemDecoration.setDrawable(ContextCompat.getDrawable(CorNormalActivity.this, R.drawable.item_divider));
+        mRecyclerView.addItemDecoration(dividerItemDecoration);
+    }
+
+    private void setListener() {
+        mAppBarLayout.addOnOffsetChangedListener((AppBarLayout appBarLayout, int i) -> {
+            
+        });
     }
 }
