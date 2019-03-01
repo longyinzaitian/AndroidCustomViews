@@ -2,75 +2,70 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".rvpg.CorNormalActivity"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".rvpg.CorNormalActivity">
 
     <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="match_parent">
 
         <android.support.design.widget.AppBarLayout
-            android:background="@android:color/white"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
+            android:layout_height="wrap_content">
 
-            <ImageView
+            <android.support.design.widget.CollapsingToolbarLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/img_e_commerce_three"
-                android:contentDescription="@string/app_name"
-                android:adjustViewBounds="true"
-                />
+                app:layout_scrollFlags="scroll">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="@dimen/dimens_2dp"
-                >
-                <ImageView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/img_e_commerce_one"
-                    android:contentDescription="@string/app_name"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    />
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/img_e_commerce_one"
-                    android:contentDescription="@string/app_name"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:layout_marginLeft="@dimen/dimens_1dp"
-                    />
-            </LinearLayout>
+                    android:orientation="vertical">
 
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/img_e_commerce_three" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimens_2dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/img_e_commerce_one" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimens_1dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/img_e_commerce_one" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
         </android.support.design.widget.AppBarLayout>
 
-        <LinearLayout
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"
-            >
-
-            <android.support.design.widget.TabLayout
-                android:id="@+id/tab_layout"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/dimens_45dp"
-                app:tabIndicatorColor="@color/colorPrimary"
-                />
-            <android.support.v4.view.ViewPager
-                android:id="@+id/view_pager"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                />
-        </LinearLayout>
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
 
     </android.support.design.widget.CoordinatorLayout>
@@ -78,35 +73,31 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimens_80dp"
-        android:background="#00D81B60"
-        >
+        android:background="#00D81B60">
 
         <LinearLayout
             android:id="@+id/search_ll"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:orientation="horizontal"
-            android:background="@drawable/bg_top_search"
             android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/dimens_20dp"
             android:layout_marginRight="@dimen/dimens_20dp"
+            android:background="@drawable/bg_top_search"
             android:gravity="center_vertical"
-            >
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/search_top_bar_ic"
                 android:layout_marginLeft="@dimen/dimens_20dp"
                 android:contentDescription="@string/app_name"
-                />
+                android:src="@drawable/search_top_bar_ic" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="搜索宝贝（数码产品、生活用品）"
-                android:textColor="@color/gray"
-                />
+                android:textColor="@color/gray" />
 
         </LinearLayout>
 
