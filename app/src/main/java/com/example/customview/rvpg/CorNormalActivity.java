@@ -1,5 +1,7 @@
 package com.example.customview.rvpg;
 
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,9 +10,11 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.RelativeLayout;
 
 import com.example.customview.BaseActivity;
 import com.example.customview.R;
+import com.example.customview.util.LogUtil;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -26,6 +30,9 @@ public class CorNormalActivity extends BaseActivity {
 
     @BindView(R.id.appbar)
     AppBarLayout mAppBarLayout;
+
+    @BindView(R.id.search_rl)
+    RelativeLayout searchRl;
 
     private ListAdapter mAdapter = null;
 
@@ -56,8 +63,14 @@ public class CorNormalActivity extends BaseActivity {
     }
 
     private void setListener() {
-        mAppBarLayout.addOnOffsetChangedListener((AppBarLayout appBarLayout, int i) -> {
-            
+        searchRl.setBackgroundColor(ContextCompat.getColor(CorNormalActivity.this,R.color.search_bg));
+        int searchBarH = getResources().getDimensionPixelSize(R.dimen.dimens_80dp);
+        mAppBarLayout.addOnOffsetChangedListener((AppBarLayout appBarLayout, int verticalOffset) -> {
+            float per = (Math.abs(verticalOffset + 0.0f)) / searchBarH;
+            if (per > 1) {
+                per = 1;
+            }
+            searchRl.getBackground().setAlpha((int)(255 * per));
         });
     }
 }

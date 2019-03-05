@@ -9,4 +9,6 @@
     <color name="gray">#cccccc</color>
     <color name="gray_light">#eeeeee</color>
     <color name="gray_dark">#999999</color>
+
+    <color name="search_bg">#D81B60</color>
 </resources>
