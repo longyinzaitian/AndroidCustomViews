@@ -1,6 +1,6 @@
 package com.example.customview.rvpg;
 
-import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.AppBarLayout;
@@ -27,7 +27,7 @@ public class CorNormalActivity extends BaseActivity {
     @BindView(R.id.appbar)
     AppBarLayout mAppBarLayout;
 
-    private ListAdapter mAdapter;
+    private ListAdapter mAdapter = null;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -48,7 +48,10 @@ public class CorNormalActivity extends BaseActivity {
         mRecyclerView.setAdapter(mAdapter);
 
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(CorNormalActivity.this, DividerItemDecoration.VERTICAL);
-        dividerItemDecoration.setDrawable(ContextCompat.getDrawable(CorNormalActivity.this, R.drawable.item_divider));
+        Drawable drawable = ContextCompat.getDrawable(CorNormalActivity.this, R.drawable.item_divider);
+        if (drawable != null) {
+            dividerItemDecoration.setDrawable(drawable);
+        }
         mRecyclerView.addItemDecoration(dividerItemDecoration);
     }
 
