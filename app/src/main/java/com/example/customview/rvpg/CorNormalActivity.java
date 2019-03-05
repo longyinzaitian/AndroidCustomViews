@@ -1,7 +1,5 @@
 package com.example.customview.rvpg;
 
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -14,7 +12,6 @@ import android.widget.RelativeLayout;
 
 import com.example.customview.BaseActivity;
 import com.example.customview.R;
-import com.example.customview.util.LogUtil;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -34,8 +31,6 @@ public class CorNormalActivity extends BaseActivity {
     @BindView(R.id.search_rl)
     RelativeLayout searchRl;
 
-    private ListAdapter mAdapter = null;
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,7 +43,7 @@ public class CorNormalActivity extends BaseActivity {
     }
 
     private void setData() {
-        mAdapter = new ListAdapter(CorNormalActivity.this);
+        ListAdapter mAdapter = new ListAdapter(CorNormalActivity.this);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(CorNormalActivity.this);
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         mRecyclerView.setLayoutManager(linearLayoutManager);
@@ -70,7 +65,7 @@ public class CorNormalActivity extends BaseActivity {
             if (per > 1) {
                 per = 1;
             }
-            searchRl.getBackground().setAlpha((int)(255 * per));
+            searchRl.getBackground().setAlpha((int)(100 * per));
         });
     }
 }
