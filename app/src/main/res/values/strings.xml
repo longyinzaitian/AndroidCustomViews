@@ -4,5 +4,6 @@
     <string name="circle_image">圆形图片</string>
     <string name="jike">即刻点赞效果</string>
     <string name="coord">协调布局相关</string>
+    <string name="cor_tool_bar">ToolBar协调布局</string>
 
 </resources>

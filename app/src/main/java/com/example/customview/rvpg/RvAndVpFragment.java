@@ -30,6 +30,9 @@ public class RvAndVpFragment extends BaseFragment {
     @BindView(R.id.btn_exp_1)
     Button btnExp1;
 
+    @BindView(R.id.btn_normal_toolbar)
+    Button btnToolbar;
+
     private static RvAndVpFragment mInstance = null;
     public RvAndVpFragment() {
     }
@@ -64,7 +67,8 @@ public class RvAndVpFragment extends BaseFragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        this.btnNormal.setOnClickListener((View v) -> startActivity(new Intent(getContext(), CorNormalActivity.class)));
-        this.btnExp1.setOnClickListener((View v) -> System.out.println("car detail fragment. btx exp1"));
+        btnNormal.setOnClickListener((View v) -> startActivity(new Intent(getContext(), CorNormalActivity.class)));
+        btnToolbar.setOnClickListener((View v) -> startActivity(new Intent(getContext(), CorToolBarActivity.class)));
+        btnExp1.setOnClickListener((View v) -> System.out.println("car detail fragment. btx exp1"));
     }
 }

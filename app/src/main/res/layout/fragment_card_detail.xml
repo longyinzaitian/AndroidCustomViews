@@ -7,8 +7,15 @@
     <Button
         android:id="@+id/btn_normal"
         style="@style/MainBtnStyle"
-        android:text="一般使用"
+        android:text="顶部布局固定，背景随之渐变"
         android:background="@color/design_default_color_primary"
+        />
+
+    <Button
+        android:id="@+id/btn_normal_toolbar"
+        style="@style/MainBtnStyle"
+        android:text="顶部ToolBar"
+        android:background="@color/colorPrimary"
         />
 
     <Button

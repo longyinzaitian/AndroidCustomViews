@@ -65,7 +65,7 @@ public class CorNormalActivity extends BaseActivity {
             if (per > 1) {
                 per = 1;
             }
-            searchRl.getBackground().setAlpha((int)(100 * per));
+            searchRl.getBackground().setAlpha((int)(255 * per));
         });
     }
 }

@@ -21,6 +21,7 @@
         <activity android:name=".jike.JikeLikeActivity" />
         <activity android:name=".rvpg.CorNormalActivity" />
         <activity android:name=".image.CircleImageActivity"/>
+        <activity android:name=".rvpg.CorToolBarActivity"/>
     </application>
 
 </manifest>
