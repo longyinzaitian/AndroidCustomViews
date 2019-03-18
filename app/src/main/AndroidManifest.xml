@@ -22,6 +22,7 @@
         <activity android:name=".rvpg.CorNormalActivity" />
         <activity android:name=".image.CircleImageActivity"/>
         <activity android:name=".rvpg.CorToolBarActivity"/>
+        <activity android:name=".rvpg.CorViewPagerActivity"/>
     </application>
 
 </manifest>

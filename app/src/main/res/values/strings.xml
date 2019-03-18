@@ -5,5 +5,7 @@
     <string name="jike">即刻点赞效果</string>
     <string name="coord">协调布局相关</string>
     <string name="cor_tool_bar">ToolBar协调布局</string>
+    <string name="cor_view_pager">结合ViewPager协调布局</string>
 
+    <string name="pager_title">标题栏</string>
 </resources>

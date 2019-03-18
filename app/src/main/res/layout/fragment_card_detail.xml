@@ -19,6 +19,13 @@
         />
 
     <Button
+        android:id="@+id/btn_normal_tab"
+        style="@style/MainBtnStyle"
+        android:text="结合ViewPager"
+        android:background="@color/design_default_color_primary"
+        />
+
+    <Button
         android:id="@+id/btn_exp_1"
         style="@style/MainBtnStyle"
         android:text="情况一"
