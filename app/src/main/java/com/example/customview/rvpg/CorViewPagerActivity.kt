@@ -1,6 +1,5 @@
 package com.example.customview.rvpg
 
-import android.arch.lifecycle.ViewModelProvider
 import android.os.Bundle
 import android.support.design.widget.TabLayout
 import android.support.v4.app.Fragment

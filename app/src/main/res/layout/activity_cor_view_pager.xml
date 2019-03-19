@@ -31,9 +31,8 @@
             android:id="@+id/tab_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:tabMode="fixed"
             app:tabBackground="@android:color/white"
-            app:tabMode="scrollable"
-            app:tabGravity="center"
             android:background="@android:color/white"
             />
         <View

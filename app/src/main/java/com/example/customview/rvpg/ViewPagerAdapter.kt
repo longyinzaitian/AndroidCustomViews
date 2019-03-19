@@ -4,7 +4,6 @@ import android.content.Context
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
-import com.example.customview.R
 
 /**
  *
@@ -20,10 +19,6 @@ class ViewPagerAdapter(fragmentManger: FragmentManager, fragments: List<Fragment
     override fun getItem(p0: Int): Fragment {
         return mFragments[p0]
     }
-
-//    override fun getPageTitle(position: Int): CharSequence? {
-//        return mContext.getString(R.string.pager_title) + position
-//    }
 
     override fun getCount(): Int {
         return mFragments.size
