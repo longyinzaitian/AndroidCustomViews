@@ -14,14 +14,16 @@
         <android.support.design.widget.CollapsingToolbarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_scrollFlags="scroll|enterAlways">
+            app:layout_scrollFlags="scroll">
 
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                >
 
                 <include
-                    layout="@layout/include_layout_toolbar"/>
+                    layout="@layout/include_layout_toolbar"
+                    />
 
             </FrameLayout>
 
