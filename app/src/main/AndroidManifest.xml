@@ -23,6 +23,7 @@
         <activity android:name=".image.CircleImageActivity"/>
         <activity android:name=".rvpg.CorToolBarActivity"/>
         <activity android:name=".rvpg.CorViewPagerActivity"/>
+        <activity android:name=".rvpg.FixBehaviorActivity"/>
     </application>
 
 </manifest>

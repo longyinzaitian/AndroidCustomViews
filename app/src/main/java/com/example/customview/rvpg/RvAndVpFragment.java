@@ -27,8 +27,8 @@ public class RvAndVpFragment extends BaseFragment {
     @BindView(R.id.btn_normal)
     Button btnNormal;
 
-    @BindView(R.id.btn_exp_1)
-    Button btnExp1;
+    @BindView(R.id.btn_fix_scroll)
+    Button btnFixScroll;
 
     @BindView(R.id.btn_normal_toolbar)
     Button btnToolbar;
@@ -73,6 +73,6 @@ public class RvAndVpFragment extends BaseFragment {
         btnNormal.setOnClickListener((View v) -> startActivity(new Intent(getContext(), CorNormalActivity.class)));
         btnToolbar.setOnClickListener((View v) -> startActivity(new Intent(getContext(), CorToolBarActivity.class)));
         btnViewPager.setOnClickListener((View v) -> startActivity(new Intent(getContext(), CorViewPagerActivity.class)));
-        btnExp1.setOnClickListener((View v) -> System.out.println("car detail fragment. btx exp1"));
+        btnFixScroll.setOnClickListener((View v) -> startActivity(new Intent(getContext(), FixBehaviorActivity.class)));
     }
 }

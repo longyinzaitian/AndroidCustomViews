@@ -26,7 +26,7 @@
         />
 
     <Button
-        android:id="@+id/btn_exp_1"
+        android:id="@+id/btn_fix_scroll"
         style="@style/MainBtnStyle"
         android:text="情况一"
         android:background="@color/colorPrimary"

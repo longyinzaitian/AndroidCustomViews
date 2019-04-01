@@ -18,9 +18,9 @@ import butterknife.ButterKnife;
 
 /**
  * @author husy
- * @date 2019/2/21
+ * @date 2019/4/1
  */
-public class CorNormalActivity extends BaseActivity {
+public class FixBehaviorActivity extends BaseActivity {
 
     @BindView(R.id.recycler_view)
     RecyclerView mRecyclerView;
@@ -43,14 +43,14 @@ public class CorNormalActivity extends BaseActivity {
     }
 
     private void setData() {
-        ListAdapter mAdapter = new ListAdapter(CorNormalActivity.this);
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(CorNormalActivity.this);
+        ListAdapter mAdapter = new ListAdapter(FixBehaviorActivity.this);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(FixBehaviorActivity.this);
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         mRecyclerView.setLayoutManager(linearLayoutManager);
         mRecyclerView.setAdapter(mAdapter);
 
-        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(CorNormalActivity.this, DividerItemDecoration.VERTICAL);
-        Drawable drawable = ContextCompat.getDrawable(CorNormalActivity.this, R.drawable.item_divider);
+        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(FixBehaviorActivity.this, DividerItemDecoration.VERTICAL);
+        Drawable drawable = ContextCompat.getDrawable(FixBehaviorActivity.this, R.drawable.item_divider);
         if (drawable != null) {
             dividerItemDecoration.setDrawable(drawable);
         }
@@ -58,7 +58,7 @@ public class CorNormalActivity extends BaseActivity {
     }
 
     private void setListener() {
-        searchRl.setBackgroundColor(ContextCompat.getColor(CorNormalActivity.this,R.color.search_bg));
+        searchRl.setBackgroundColor(ContextCompat.getColor(FixBehaviorActivity.this,R.color.search_bg));
         int searchBarH = getResources().getDimensionPixelSize(R.dimen.dimens_80dp);
         mAppBarLayout.addOnOffsetChangedListener((AppBarLayout appBarLayout, int verticalOffset) -> {
             float per = (Math.abs(verticalOffset + 0.0f)) / searchBarH;
@@ -68,4 +68,5 @@ public class CorNormalActivity extends BaseActivity {
             searchRl.getBackground().setAlpha((int)(255 * per));
         });
     }
+
 }
