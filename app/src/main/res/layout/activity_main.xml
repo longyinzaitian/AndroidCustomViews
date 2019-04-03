@@ -33,4 +33,11 @@
         android:background="@color/design_default_color_primary"
         />
 
+    <Button
+        android:id="@+id/btn_test_aidl"
+        style="@style/MainBtnStyle"
+        android:text="AIDL"
+        android:background="@color/colorPrimary"
+        />
+
 </LinearLayout>

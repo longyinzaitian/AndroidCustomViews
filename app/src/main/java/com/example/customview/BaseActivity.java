@@ -7,8 +7,6 @@ import android.view.View;
 
 import com.example.customview.ui.view.CommonToolbar;
 
-import java.security.interfaces.RSAKey;
-
 import butterknife.Unbinder;
 
 /**

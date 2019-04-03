@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".service.TestAidlActivity"></activity>
         <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,10 +21,14 @@
         <activity android:name=".rvpg.RvAndVpActivity" />
         <activity android:name=".jike.JikeLikeActivity" />
         <activity android:name=".rvpg.CorNormalActivity" />
-        <activity android:name=".image.CircleImageActivity"/>
-        <activity android:name=".rvpg.CorToolBarActivity"/>
-        <activity android:name=".rvpg.CorViewPagerActivity"/>
-        <activity android:name=".rvpg.FixBehaviorActivity"/>
+        <activity android:name=".image.CircleImageActivity" />
+        <activity android:name=".rvpg.CorToolBarActivity" />
+        <activity android:name=".rvpg.CorViewPagerActivity" />
+        <activity android:name=".rvpg.FixBehaviorActivity" />
+
+        <service
+            android:name=".service.ServerService"
+            android:process=":remote" />
     </application>
 
 </manifest>

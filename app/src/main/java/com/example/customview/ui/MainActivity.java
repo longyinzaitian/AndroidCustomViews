@@ -9,6 +9,7 @@ import com.example.customview.R;
 import com.example.customview.image.CircleImageActivity;
 import com.example.customview.jike.JikeLikeActivity;
 import com.example.customview.rvpg.RvAndVpActivity;
+import com.example.customview.service.TestAidlActivity;
 
 /**
  *
@@ -41,6 +42,10 @@ public class MainActivity extends BaseActivity {
 
         findViewById(R.id.btn_circle_image).setOnClickListener((View v) ->
                 startActivity(new Intent(MainActivity.this, CircleImageActivity.class))
+        );
+
+        findViewById(R.id.btn_test_aidl).setOnClickListener((View v) ->
+                startActivity(new Intent(MainActivity.this, TestAidlActivity.class))
         );
     }
 }
